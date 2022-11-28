@@ -3,12 +3,6 @@ memalloc
 
 This is a simple memory allocator for C where malloc(), calloc(), realloc() and free() are reimplemented.
 
-* Basic file opening, viewing and editing
-* Saving to disk with confirmation messages
-* Basic filetype detection and syntax highlighting
-* Simple search functionalities
-* Builtin keybinds
-
 Running
 -------
 
