@@ -153,3 +153,14 @@ void *realloc(void *block, size_t size)
 	}
 	return ret;
 }
+
+void print_mem_list()
+{
+	header_t *curr = head;
+	printf("head = %p, tail = %p \n", (void*)head, (void*)tail);
+	while(curr) {
+		printf("addr = %p, size = %zu, is_free=%u, next=%p\n",
+			(void*)curr, curr->s.size, curr->s.is_free, (void*)curr->s.next);
+		curr = curr->s.next;
+	}
+}
